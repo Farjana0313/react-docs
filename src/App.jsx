@@ -1,5 +1,7 @@
 
+import FeedbackForm from './components/FeedbackForm'
 import Form from './components/Form'
+import Form2 from './components/Form2'
 import Pointer from './components/Pointer'
 
 function App() {
@@ -9,7 +11,9 @@ function App() {
   return (
     <>
         {/* <Form /> */}
-        <Pointer/>
+        {/* <Pointer/> */}
+        {/* <Form2/> */}
+        <FeedbackForm/>
     </>
   )
 }
