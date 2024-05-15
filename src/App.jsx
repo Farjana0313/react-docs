@@ -1,4 +1,5 @@
 
+import AvoidRedundant from './components/AvoidRedundant'
 import FeedbackForm from './components/FeedbackForm'
 import Form from './components/Form'
 import Form2 from './components/Form2'
@@ -13,7 +14,8 @@ function App() {
         {/* <Form /> */}
         {/* <Pointer/> */}
         {/* <Form2/> */}
-        <FeedbackForm/>
+        {/* <FeedbackForm/> */}
+        <AvoidRedundant/>
     </>
   )
 }
