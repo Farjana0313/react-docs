@@ -3,18 +3,16 @@ import { useState } from 'react';
 export default function AvoidRedundant() {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
-  const [fullName, setFullName] = useState('');
 
   function handleFirstNameChange(e) {
     setFirstName(e.target.value);
-    setFullName(e.target.value + ' ' + lastName);
   }
 
   function handleLastNameChange(e) {
     setLastName(e.target.value);
-    setFullName(firstName + ' ' + e.target.value);
   }
-
+// derived state
+const fullName = firstName + " " + lastName;
   return (
     <>
       <h2>Let’s check you in</h2>
@@ -25,6 +23,7 @@ export default function AvoidRedundant() {
           onChange={handleFirstNameChange}
         />
       </label>
+      <br />
       <label>
         Last name:{' '}
         <input
