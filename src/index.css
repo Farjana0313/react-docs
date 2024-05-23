@@ -44,7 +44,8 @@ code {
     font-size: 1.2em;
 }
 
-ul {
+ul,
+ol {
     padding-inline-start: 20px;
 }
 
@@ -57,7 +58,8 @@ ul {
 }
 
 
-ul {
+ul,
+ol {
     padding-inline-start: 20px;
 }
 
@@ -65,3 +67,12 @@ label {
     display: block;
     margin-bottom: 5px;
 }
+
+button {
+    margin: 10px;
+    padding: 5px 10px;
+}
+.panel {
+    padding: 10px;
+    border: 1px solid #aaa;
+  }
